@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./simpleCalc.css">
+  <title>Document</title>
+</head>
+
+<body background="./bg.jpg">
+
+  <div class="calculator">
+    <input type="text" id="screen" disabled>
+    <input type="button" value="C" id="ac" class="btn" onclick="cancel()">
+    <input type="button" value="DEL" class="btn" onclick="del()">
+    <input type="button" value="%" class="btn" onclick="percent()">
+    <input type="button" value="/" class="btn" id="operator" onclick="append(' / ')">
+    <input type="button" value="7" class="btn" onclick="append('7')">
+    <input type="button" value="8" class="btn" onclick="append('8')">
+    <input type="button" value="9" class="btn" onclick="append(9)">
+    <input type="button" value="x" class="btn" id="operator" onclick="append(' * ')">
+    <input type="button" value="4" class="btn" onclick="append(4)">
+    <input type="button" value="5" class="btn" onclick="append(5)">
+    <input type="button" value="6" class="btn" onclick="append(6)">
+    <input type="button" value="-" class="btn" id="operator" onclick="append(' - ')">
+    <input type="button" value="1" class="btn" onclick="append(1)">
+    <input type="button" value="2" class="btn" onclick="append(2)">
+    <input type="button" value="3" class="btn" onclick="append(3)">
+    <input type="button" value="+" class="btn" id="operator" onclick="append(' + ')">
+    <input type="button" value="0" class="zero btn" onclick="append(0)">
+    <input type="button" value="." class="btn" onclick="append('.')">
+    <input type="button" value="=" class="btn" id="operator" style="background-color: rgb(143, 197, 143);"
+      onclick="calculate()">
+
+  </div>
+
+  <footer><strong><em>Powered by</em> DevBasito</strong></footer>
+
+</body>
+
+<script src="./simpleCalc.js"></script>
+
+</html>
