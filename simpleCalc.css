@@ -32,6 +32,8 @@
 
   }
 
+  .btn:hover{background-color: white;}
+
   #operator {
     background-color: lightblue;
     color: white;
@@ -46,4 +48,8 @@
     text-align: center;
     color: lightblue;
     margin: 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .calculator{width: 75%;}
   }
